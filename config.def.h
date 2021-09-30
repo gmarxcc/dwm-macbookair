@@ -109,7 +109,6 @@ static Key keys[] = {
 	{ 0,              XF86XK_AudioMute, spawn,                 {.v = mutevol } },
 	{ 0,              XF86XK_AudioRaiseVolume, spawn,          {.v = upvol   } },
 };
-};
 
 /* button definitions */
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
