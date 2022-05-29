@@ -2,9 +2,10 @@
 
 #include <X11/XF86keysym.h>
 /*volume*/
-static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
-static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
-static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
+#define DISPLAY "alsa_output.usb-Apple_Inc._Display_Audio_0E020A16-00.analog-stereo"
+static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", DISPLAY, "+5%",     NULL };
+static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", DISPLAY, "-5%",     NULL };
+static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   DISPLAY, "toggle",  NULL };
 /*Keyboard backlight*/
 static const char *kbdbrightup[]   = { "brightnessctl", "-d", "smc::kbd_backlight", "s", "+10%" };
 static const char *kbdbrightdown[]   = { "brightnessctl", "-d", "smc::kbd_backlight", "s", "10%-" };
@@ -40,8 +41,8 @@ static const unsigned int alphas[][3]      = {
 
 /* tagging */
 //static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
-
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class

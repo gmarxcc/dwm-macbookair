@@ -50,9 +50,10 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Brave",    NULL,       NULL,       1,            0,           -1 },
+	{ "Brave",    NULL,       NULL,       0<<1,         0,           -1 },
 	{ "imagej",   NULL,       NULL,       0,            1,           -1 },
-	{ "eclipse",  NULL,       NULL,       0,       	    1,           -1 },
+	{ "eclipse",  NULL,       NULL,       1<<4,  	    1,           -1 },
+	{ "Arduino",  NULL,       NULL,       1<<4, 	    1,           -1 },
 };
 
 /* layout(s) */
