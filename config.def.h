@@ -5,7 +5,7 @@
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
 static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
-static const char *card0[] = { "/usr/bin/pactl", "set-default-sink", "1"};
+//static const char *card0[] = { "/usr/bin/pactl", "set-default-sink", "1"};
 /*Keyboard backlight*/
 static const char *kbdbrightup[]   = { "brightnessctl", "-d", "smc::kbd_backlight", "s", "+10%" };
 static const char *kbdbrightdown[]   = { "brightnessctl", "-d", "smc::kbd_backlight", "s", "10%-" };
@@ -58,8 +58,12 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 	{ "imagej",   NULL,       NULL,       0,            1,           -1 },
-	{ "processing-app-Base",  NULL,  NULL,1 << 5,       0,           -1 },
-	//{ "Alacritty",  NULL,     NULL,       1 << 2,       0,           -1 },
+	{ "processing-app-Base",  NULL,  NULL,1 << 3,       0,           -1 },
+	{ "Rocket.Chat",  NULL,   NULL,       1 << 1,       0,           -1 },
+	{ "Gnome-pomodoro",  NULL,  NULL,	  1 << 8,       0,           -1 },
+	{ "Thunar",   NULL,	      NULL,	      1 << 6,       0,           -1 },
+	{ "Thunerbird",   NULL,	  NULL,	      1 << 7,       0,           -1 },
+	//{ "Alacritty",  NULL,     NULL,     1 << 2,       0,           -1 },
 	{ "Brave-browser",  NULL, NULL,       1 << 0,       0,           -1 },
 };
 
