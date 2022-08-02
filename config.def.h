@@ -60,11 +60,12 @@ static const Rule rules[] = {
 	{ "imagej",   NULL,       NULL,       0,            1,           -1 },
 	{ "processing-app-Base",  NULL,  NULL,1 << 3,       0,           -1 },
 	{ "Rocket.Chat",  NULL,   NULL,       1 << 1,       0,           -1 },
-	{ "Gnome-pomodoro",  NULL,  NULL,	  1 << 8,       0,           -1 },
+	//{ "Gnome-pomodoro",  NULL,  NULL,	  1 << 8,       0,           -1 },
 	{ "Thunar",   NULL,	      NULL,	      1 << 6,       0,           -1 },
 	{ "Thunerbird",   NULL,	  NULL,	      1 << 7,       0,           -1 },
 	//{ "Alacritty",  NULL,     NULL,     1 << 2,       0,           -1 },
 	{ "Brave-browser",  NULL, NULL,       1 << 0,       0,           -1 },
+	{ "Emacs",    NULL,		  NULL,       1 << 4,       0,           -1 },
 };
 
 /* layout(s) */
